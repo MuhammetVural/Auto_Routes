@@ -1,0 +1,123 @@
+{
+    "validate":{
+    "connectionTimedOut": "Connection timed out. Please try again later.",
+    "emptyCommentFailureMessage": "Comment field cannot be empty.",
+    "emptyDescriptionStatusFailureMessage": "Status Description field cannot be empty.",
+    "emptyEmailFailureMessage": "Email field cannot be empty.",
+    "emptyInputFailureMessage": "This field cannot be empty",
+    "emptyNewPasswordFailureMessage": "New Password field is required.",
+    "emptyPasswordFailureMessage": "Password field cannot be empty.",
+    "emptyPhoneFailureMessage": "Phone number field cannot be empty.",
+    "emptyTcFailureMessage": "TC Identity Number field cannot be empty.",
+    "emptyPinputFailureMessage": "PIN field cannot be empty.",
+    "fieldRequiredFailureMessage": "This field is required",
+    "invalidAmountFailureMessage": "Invalid Inventory",
+    "invalidEmailFailureMessage": "Please enter a valid email address",
+    "invalidPasswordFailureMessage": "Password must contain at least 1 uppercase letter, 1 lowercase letter, and 1 special character.",
+    "invalidTcFailureMessage": "You entered your T.C. Identity number incorrectly.",
+    "locationDeniedForever": "Location permission denied. Please enable location permission in settings.",
+    "locationPermissionDeniedMessage": "Location permission denied. Please grant location permission.",
+    "locationServiceDisabledMessage": "Location service is disabled. Please enable location service.",
+    "longPasswordFailureMessage": "Password should be at most 12 characters.",
+    "noConnection": "No internet connection.",
+    "passwordLowerCaseFailureMessage": "Password should contain at least one lowercase letter.",
+    "passwordNotMatchFailureMessage": "Passwords do not match.",
+    "passwordSpecialCharacterFailureMessage": "Password should contain at least one special character.",
+    "passwordTurkishCharacterFailureMessage": "Password should not contain Turkish characters.",
+    "passwordUpperCaseFailureMessage": "Password should contain at least one uppercase letter.",
+    "shortPasswordFailureMessage": "Password should be at least 8 characters.",
+    "shortTcFailureMessage": "TC Identity Number should be 11 digits.",
+    "unknownError": "An unknown error occurred. Please try again later.",
+    "wrongPinFailureMessage": "Incorrect PIN code.",
+    "zeroAmountFailureMessage": "Invalid Value."
+    },
+    "login": {
+        "title": "Login",
+        "subtitle1": "Already have not an account?",
+        "subtitle2": "Registration",
+        "email": "Email Adress",
+        "password": "Password",
+        "butonName1": "Login",
+        "butonName2" : "Student Login",
+        "forgetPassword" : "Forget Password?",
+        "or" : "or"
+    },
+    "welcome": {
+        "title": "Welcome",
+        "subtitle1": "Empower your learning journey with ToDoDys, \ndesigned to support individuals with dyslexia.",
+        "individual": "individual",
+        "individualDescription": "For individual use only",
+        "teacher": "teacher",
+        "teacherDescription": "Suitable for instructors, \nCan be used for multiple \nstudents",
+        "parent": "parent",
+        "parentDescription": "Suitable for families and \nparents",
+        "ram": "ram/crc",
+        "ramDescription": "Suitable for conseling \nand research center(CRC).",
+        "butonName1": "Back",
+        "butonName2": "Continue",
+        "dialogText": "option only includes photo-to-text and voice-over features. If desired, exercise such as reading, writing and arithmetic can be turned on from the settings section."
+    },     
+    "registiration": {
+        "title": "Registiration",
+        "firstName": "First Name",
+        "firstNameValidation": " First name can't be empty",
+        "lastName": "Last Name",
+        "lastNameValidation": " Last name can't be empty",
+        "age": "Age",
+        "ageValidation": "Please select an age",
+        "email": "Email Adress",
+        "emailValidation": " Email address can't be empty",
+        "phone": "Phone Number",
+        "phoneValidation": "Phone number can't be empty",
+        "password" : "Password",
+        "passwordValidation": "Phone number can't be empty",
+        "confirmPassword" : "Confirm Password",
+        "privacy" : "I agree to all terms,rules and privacy policy.",
+        "confrimButton":"Confirm",
+        "createButton":"Create Account"
+    },
+    "verification": {
+        "title": "Verification",
+        "subtitle1": "Enter the verification code,\nwe sent to e-mail or\n phone number.",
+        "sendCode": "Send code again",
+        "button": "Confirm"
+    },
+    "forgetPassword": {
+        "title": "Forget Password",
+        "email": "Email Adress",
+        "button": "Send Code"
+    },
+    "changePassword": {
+        "title": "Change Password",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "button": "Change Password"
+    },
+    "studentLogin": {
+        "title": "Student Login",
+        "subtitle1": "Already have not code?",
+        "subtitle2": "Contact with teacher/parent",
+        "code": "Enter Code",
+        "button": "Student Login",
+        "remindme": "Remind me"
+    },
+    "homeTeacher": {
+        "subtitle1": "My Students",
+        "addButton": "+Add Student"
+    },
+    "studentDetail": {
+        "butonName1": "Level View",
+        "butonName2": "Daily Routine"
+    },
+    "levelView": {
+        "title": "Level View"
+    },
+    "dailyRoutines": {
+        "title": "Daily Routines"
+    },
+    "addStudent": {
+        "title": "Add Student",
+        "message":"You can share your comments and suggestions with us.",
+        "button": "Confirm" 
+    }
+}
