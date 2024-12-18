@@ -632,6 +632,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/game.svg
   String get game => 'assets/svg/game.svg';
 
+  /// File path: assets/svg/gg_profile.svg
+  String get ggProfile => 'assets/svg/gg_profile.svg';
+
   /// File path: assets/svg/home.svg
   String get home => 'assets/svg/home.svg';
 
@@ -715,6 +718,7 @@ class $AssetsSvgGen {
         exit,
         fullEllipse,
         game,
+        ggProfile,
         home,
         leftCircular,
         lock,
