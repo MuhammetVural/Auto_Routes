@@ -17,8 +17,10 @@ class CodegenLoader extends AssetLoader{
   static const Map<String,dynamic> tr = {
   "agirlik": {
     "title": "Agırlık",
+    "mevcut_agirlik": "Mevcut Ağırlık",
     "agirlik": "Ağırlık",
-    "dialogText": "seçeneği sadece fotoğraftan metne ve seslendirme özelliklerini içerir. İstenirse ayarlar bölümünden okuma, yazma ve aritmetik gibi egzersiz özellikleri açılabilir."
+    "dialogText": "deneme",
+    "todo": "Yapılacaklar Listesi"
   },
   "registiration": {
     "title": "Kayıt",
@@ -87,8 +89,10 @@ class CodegenLoader extends AssetLoader{
 static const Map<String,dynamic> en = {
   "agirlik": {
     "title": "Weight",
+    "mevcut_agirlik": "Current Weight",
     "agirlik": "Weight",
-    "dialogText": "seçeneği sadece fotoğraftan metne ve seslendirme özelliklerini içerir. İstenirse ayarlar bölümünden okuma, yazma ve aritmetik gibi egzersiz özellikleri açılabilir."
+    "dialogText": " test",
+    "todo": "To Do"
   },
   "login": {
     "title": "Login",

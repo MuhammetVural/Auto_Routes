@@ -2,8 +2,10 @@
  
     "agirlik": {
         "title": "Agırlık",
+        "mevcut_agirlik": "Mevcut Ağırlık",
         "agirlik": "Ağırlık",
-        "dialogText": "seçeneği sadece fotoğraftan metne ve seslendirme özelliklerini içerir. İstenirse ayarlar bölümünden okuma, yazma ve aritmetik gibi egzersiz özellikleri açılabilir."
+        "dialogText": "deneme",
+        "todo": "Yapılacaklar Listesi"
     },
     "registiration": {
         "title": "Kayıt",

@@ -3,8 +3,10 @@
     
     "agirlik": {
         "title": "Weight",
+        "mevcut_agirlik": "Current Weight",
         "agirlik": "Weight",
-        "dialogText": "seçeneği sadece fotoğraftan metne ve seslendirme özelliklerini içerir. İstenirse ayarlar bölümünden okuma, yazma ve aritmetik gibi egzersiz özellikleri açılabilir."
+        "dialogText": " test",
+        "todo": "To Do"
     },
     "login": {
         "title": "Login",

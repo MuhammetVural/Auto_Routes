@@ -566,6 +566,19 @@ class $AssetsImagesGen {
       ];
 }
 
+class $AssetsLanguageGen {
+  const $AssetsLanguageGen();
+
+  /// File path: assets/language/en.json
+  String get en => 'assets/language/en.json';
+
+  /// File path: assets/language/tr.json
+  String get tr => 'assets/language/tr.json';
+
+  /// List of all assets
+  List<String> get values => [en, tr];
+}
+
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
@@ -747,6 +760,7 @@ class Assets {
 
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsLanguageGen language = $AssetsLanguageGen();
   static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
 
