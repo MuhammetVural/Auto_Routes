@@ -49,6 +49,14 @@ class HomePage extends StatelessWidget {
                 'agirlik.todo'.tr(),
               ),
             ),
+            ElevatedButton(
+              onPressed: () {
+                context.router.push(WordCounterRoute());
+              },
+              child: Text(
+                'Kelime Sınırı',
+              ),
+            ),
           ],
         ),
       ),
