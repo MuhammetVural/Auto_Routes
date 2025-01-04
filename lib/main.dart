@@ -1,12 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:first_project/pages/homepage/home_page.dart';
-import 'package:first_project/providers/agirlik_state.dart';
 import 'package:first_project/router/app_router.dart';
 import 'package:first_project/theme/theme_constants.dart';
 import 'package:first_project/theme/theme_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:provider/provider.dart';
 
 Future<void> main() async {
   runApp( ProviderScope(

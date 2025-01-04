@@ -16,6 +16,7 @@ class AppRouter extends RootStackRouter {
   AutoRoute(page: AgirlikRoute.page),
   AutoRoute(page: TodoRoute.page),
   AutoRoute(page: WordCounterRoute.page),
+  AutoRoute(page: MessageRoute.page),
    /// routes go here
  ];
 }

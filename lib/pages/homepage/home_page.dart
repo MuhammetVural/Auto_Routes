@@ -1,8 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:first_project/generated/localization_manager.dart';
 import 'package:first_project/router/app_router.gr.dart';
-import 'package:first_project/pages/settings/settings_page.dart';
 import 'package:first_project/theme/theme_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -20,11 +18,6 @@ class HomePage extends ConsumerWidget {
     final currentIndex = ref.watch(bottomNavigationProvider);
 
     // Alt sekme için sayfalar
-    final List<Widget> _pages = [
-      const Center(child: Text('Home Page', style: TextStyle(fontSize: 24))),
-      const Center(child: Text('Search Page', style: TextStyle(fontSize: 24))),
-      const Center(child: Text('Profile Page', style: TextStyle(fontSize: 24))),
-    ];
 
     final theme = Theme.of(context);
     final themeMode = ref.watch(themeManagerProvider);
@@ -101,9 +94,19 @@ class HomePage extends ConsumerWidget {
             Switch(
                 value: themeMode == ThemeMode.dark,
                 onChanged: (isDarkMode) {
+                  // ignore: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
                   themeModeNotifier.state =
                       isDarkMode ? ThemeMode.dark : ThemeMode.light;
-                })
+                }),
+                ElevatedButton(
+              onPressed: () {
+                context.router.push(MessageRoute());
+              },
+              child: Text(
+                'Api Connect',
+              ),
+            ),
+                
           ],
         ),
       ),
