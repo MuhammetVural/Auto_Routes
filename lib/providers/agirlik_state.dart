@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../models/weight_model.dart';
+import '../data/models/weight_model.dart';
 
 class AgirlikState with ChangeNotifier {
 

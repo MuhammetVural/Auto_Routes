@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../models/todo_model.dart';
+import '../data/models/todo_model.dart';
 
 class TodoNotifier extends StateNotifier<List<TodoModel>> {
    TodoNotifier() : super([]);

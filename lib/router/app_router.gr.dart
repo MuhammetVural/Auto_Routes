@@ -49,7 +49,7 @@ class HomeRoute extends _i7.PageRouteInfo<void> {
   static _i7.PageInfo page = _i7.PageInfo(
     name,
     builder: (data) {
-      return const _i2.HomePage();
+      return  _i2.HomePage();
     },
   );
 }

@@ -2,6 +2,8 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:first_project/pages/homepage/home_page.dart';
 import 'package:first_project/providers/agirlik_state.dart';
 import 'package:first_project/router/app_router.dart';
+import 'package:first_project/theme/theme_constants.dart';
+import 'package:first_project/theme/theme_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:provider/provider.dart';
@@ -20,21 +22,21 @@ Future<void> main() async {
   await EasyLocalization.ensureInitialized();
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
    MyApp({super.key});
   final _appRoute = AppRouter();
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final themeMode = ref.watch(themeManagerProvider);
     return MaterialApp.router(
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeMode,
       routerConfig: _appRoute.config(),
     );
   }
