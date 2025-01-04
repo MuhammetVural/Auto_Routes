@@ -1,25 +1,39 @@
-import 'package:first_project/pages/homepage/home_page.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:first_project/router/app_router.dart';
+import 'package:first_project/theme/theme_constants.dart';
+import 'package:first_project/theme/theme_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-void main() {
-  runApp( MyApp());
+Future<void> main() async {
+  runApp( ProviderScope(
+    child: EasyLocalization(
+        supportedLocales: [Locale('en'), Locale('tr')],
+        path: 'assets/language', // <-- change the path of the translation files 
+        fallbackLocale: Locale('tr'),
+        saveLocale: true,
+        startLocale: Locale('tr'),
+      child: MyApp()),
+  ));
+    WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
    MyApp({super.key});
   final _appRoute = AppRouter();
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final themeMode = ref.watch(themeManagerProvider);
     return MaterialApp.router(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-   
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeMode,
       routerConfig: _appRoute.config(),
     );
   }
